@@ -9,14 +9,17 @@
 </head>
 <body>
     
-<div class="container">
+<div class="container" style="margin-top: 40px">
+
+<h1> Ultimas denuncias enviadas </h1>
+
 <table class="table" style="margin-top: 40px">
             <thead>
                 <tr style="text-align: center;">
                     <th scope="col">Nome Colaborador</th>
                     <th scope="col">Email</th>
                     <th scope="col">Mensagem</th>
-                    <th scope="col">Opções</th>
+
                 </tr>
             </thead>
             <?php
@@ -34,9 +37,6 @@
                     <td> <?php echo $nome ?> </td>
                     <td> <?php echo $email ?> </td>
                     <td> <?php echo $msg ?> </td>
-                    <td> <a class="btn btn-warning btn-sm" style="color:white" href="editar_categoria.php?id=<?php echo $id_categoria ?>" role="button"><i class="fa-solid fa-pen-to-square"></i> Editar </a>
-                        <a class="btn btn-danger btn-sm" onclick="alerta()" style="color:white" href="deletar_categoria.php?id=<?php echo $id_categoria ?>" role="button"><i class="fa-solid fa-trash"></i> Excluir </a>
-                    </td>
                 </tr>
 
             <?php
@@ -45,8 +45,8 @@
 
         </table>
 
-        <div style="text-align: left">
-              <a href="contato.php" type="button" > Voltar </a>
+        <div style="text-align: left; margin-top: 40px">
+            <a href="contato.php" type="button" class="btn btn-primary"> Voltar </a>
         </div>
 </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
