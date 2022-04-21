@@ -26,13 +26,18 @@
             include 'sql.php';
             $sql = "SELECT * FROM `colaboradores`";
             $busca = mysqli_query($conexao, $sql);
+            
 
+    
             while ($array = mysqli_fetch_array($busca)) {
                 $id = $array['id'];
                 $nome = $array['nome'];
                 $email = $array['email'];
                 $msg = $array['msg'];
             ?>
+
+            
+
                 <tr style="text-align: center;">
                     <td> <?php echo $nome ?> </td>
                     <td> <?php echo $email ?> </td>
@@ -41,12 +46,13 @@
 
             <?php
             }
+            
             ?>
 
         </table>
 
         <div style="text-align: left; margin-top: 40px">
-            <a href="contato.php" type="button" class="btn btn-primary"> Voltar </a>
+            <a href="index.html" type="button" class="btn btn-primary"> Voltar </a>
         </div>
 </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

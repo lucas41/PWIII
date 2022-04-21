@@ -64,7 +64,7 @@
               <br>
               <div style="text-align: left">
               <a href="index.html" type="button" class="btn btn-primary"> Voltar </a>
-              <a href="listar.php" type="button" class="btn btn-success"> Listar </a>
+
              
               </div>
               <div style="text-align: right">
