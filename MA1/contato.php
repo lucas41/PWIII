@@ -63,9 +63,7 @@
               </div>
               <br>
               <div style="text-align: left">
-              <a href="index.html" type="button" class="btn btn-primary"> Voltar </a>
-
-             
+              <a href="listar.php" type="button" > Listar </a>
               </div>
               <div style="text-align: right">
                 <button type="reset" class="btn btn-danger"> Apagar </button>
